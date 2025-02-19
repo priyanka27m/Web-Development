@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Website Design</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Karnataka</h1>
+<h5>One state.Many worlds.</h5>
+<header>
+               <div class="main">
+                      <div class="logo">
+                      <img src="logo.jpg"alt="image"height="8%"width="24%"/>
+
+<div id="sideNav">
+<nav>
+ <ul>
+                     <li><a href="login.html.">Login</a></li>
+                   <li><a href='Home.html'>Home</a></li>
+                  <li><a href="Packages.html">Packages</a></li>
+                  <li><a href="Gallery.html">Gallery</a></li>
+                 <li><a href="book order.html">Book Now</a></li>
+                 <li><a href="blogs.html">Blogs</a></li>
+                  <li><a href="contact us.html">Contact Us</a></li>
+               </ul>
+</nav>
+</div>
+<div id="menuBtn">
+<img src="menu.png" id="menu">
+</div>
+<script>
+var menuBtn=document.getElementById("menuBtn")
+var sideNav=document.getElementById("sideNav")
+var menu=document.getElementById("menu")
+
+menuBtn.onclick=function()
+{
+ if(sideNav.style.right=="-250px")
+{
+    sideNav.style.right="0";
+}
+else
+{
+sideNav.style.right="-250px";
+}
+}
+</script>
+</header>
+</body>
+</html>

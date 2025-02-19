@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:century gothic;
+     color:black;
+   }
+header
+{
+  background-image:url(img1.jpg);
+       height: 700px;
+      background-size: cover;
+       background-position: center;
+    }
+h1
+{
+  color:white;
+  position:absolute;
+     top:30%;
+     left:30%;
+    font-size:100px;
+ }
+h5
+{
+    color:white;
+  position:absolute;
+     top:50%;
+     right:40%;
+    font-size:20px;
+ }
+h4
+{
+    color:black;
+  position:absolute;
+     top:50%;
+     right:20%;
+    font-size:20px;
+ }
+#sideNav
+{
+width:200px;
+height:180vh;
+position:fixed;
+right:0;
+top:0;
+background:black;
+
+z-index:2;
+}
+nav  ul li
+{
+
+   list-style:none;
+   margin:50px 20%;
+ }
+
+nav ul li a
+{ color:white;
+    text-decoration:none;
+    }
+
+ul li a:hover
+{
+   background-color:MistyRose;
+    color:LightBlue;
+}
+#menuBtn
+       {
+                   width:50px;
+                  heigth:50px;
+                 background:black;
+                 text-align:center;
+                   position:fixed;
+                            right:30px;
+                                      top:20px;
+                          border-radius:2px;
+                            z-index:3;
+                   cursor:pointer;
+}
+#menuBtn img{
+width:50px;
+margin-top:5px;
+}
+
+.main
+{
+       max-width:1200px;
+              margin:auto;
+}
+
+
+.gallery{
+min-height: 100vh;
+}
+.gallery .box-container{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+width: 90%;
+margin:0 auto;
+}
+.gallery .box-container .box{
+height:20rem;
+width:30rem;
+margin:2rem;
+cursor: pointer;
+overflow: hidden;
+position: relative;
+}
+.gallery .box-container .box img{
+height:100%;
+width:100%;
+object-fit: cover;
+}
+.gallery .box-container .box .icons{
+position: absolute;
+top:120%; left: 0;
+background:linear-gradient(transparent, #333);
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+height:100%;
+width: 100%;
+opacity: 0;
+transition: .2s linear;
+}
+.gallery .box-container .box:hover .icons{
+opacity: 1;
+top:0;
+}
+.gallery .box-container .box .icons a{
+color:#fff;
+text-shadow: 0 .1rem .3rem #000;
+font-size: 3rem;
+padding-bottom: 2rem;
+}
+.gallery .box-container .box .icons a:hover{
+color:#0098a1;
+}
+.feature{
+min-height:100vh;
+background:#f9f9f9;
+}
+.feature .card-container{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+}
+.feature .card-container .card{
+width:30rem;
+margin:2rem;
+background: #fff;
+border-radius: .5rem;
+box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+overflow: hidden;
+position: relative;
+}
+.feature .card-container .card img{
+height:25rem;
+width: 100%;
+object-fit: cover;
+}
+.feature .card-container .content{
+padding-bottom: 2rem;
+text-align: center;
+}
+.feature .card-container .content .title{
+color:#0098a1;
+font-size: 3rem;
+}
+.feature .card-container .content p{
+color:#333;
+font-size: 1.3rem;
+padding:1rem;
+}
+.feature .card-container .content .stars i{
+padding:0 .2rem;
+font-size: 2rem;
+color:gold;
+}
+.feature .card-container .content .btn{
+font-size: 1.7rem;
+margin-top: 1.4rem;
+height:3.5rem;
+width:12rem;
+border-radius: .5rem;
+outline: none;
+border:none;
+background: #0098a1;
+color:#fff;
+cursor: pointer;
+transition: .2s linear;
+}
+.feature .card-container .content .btn:hover{
+background: none;
+border:.2rem solid #0098a1;
+color:#0098a1;
+}
+.feature .card-container .card .discount{
+position: absolute;
+top:1rem; left: 1rem;
+display: block;
+height:3.5rem;
+width:6rem;
+background: #ff3300;
+color:#fff;
+line-height: 4rem;
+text-align: center;
+font-size: 2rem;
+}
